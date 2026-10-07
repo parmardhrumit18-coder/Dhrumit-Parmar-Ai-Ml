@@ -1,0 +1,24 @@
+insight_id,type,indicator,entity,period,value,prev_value,change_pct,metric,score,severity,explanation,adverse
+INS-0001,trend,high_risk_cases,Mehsana,2026-08,28.0,11.0,154.5,pct_change,15.45,High,"High Risk Cases in Mehsana rose by 154.5% vs 2026-07 (11 → 28), past the 10% threshold.",True
+INS-0002,trend,anc_coverage,Mehsana,2026-08,42.0,84.0,-50.0,pct_change,5.0,High,"ANC Coverage in Mehsana dropped by 50.0% vs 2026-07 (84% → 42%), past the 10% threshold.",True
+INS-0003,trend,high_risk_cases,Ahmedabad,2026-08,13.0,10.0,30.0,pct_change,3.0,High,"High Risk Cases in Ahmedabad rose by 30.0% vs 2026-07 (10 → 13), past the 10% threshold.",True
+INS-0004,trend,anc_coverage,Ahmedabad,2026-08,69.0,85.0,-18.8,pct_change,1.88,High,"ANC Coverage in Ahmedabad dropped by 18.8% vs 2026-07 (85% → 69%), past the 10% threshold.",True
+INS-0005,outlier,anc_coverage,Mehsana,2026-08,42.0,80.5,-47.8,iqr_distance,-6.35,High,"Mehsana's ANC Coverage of 42% sits outside the IQR fence (69.9% to 92.9%), 48% below the median.",True
+INS-0006,outlier,high_risk_cases,Mehsana,2026-08,28.0,13.0,115.4,iqr_distance,3.06,High,"Mehsana's High Risk Cases of 28 sits outside the IQR fence (4.4 to 21.4), 115% above the median.",True
+INS-0007,threshold_breach,anc_coverage,Mehsana,2026-08,42.0,80.0,-47.5,gap_to_target,4.75,High,"Mehsana's ANC Coverage of 42% is newly below the 80% target, 47.5% short.",True
+INS-0008,threshold_breach,anc_coverage,Ahmedabad,2026-08,69.0,80.0,-13.8,gap_to_target,1.38,High,"Ahmedabad's ANC Coverage of 69% is newly below the 80% target, 13.8% short.",True
+INS-0009,correlation,institutional_delivery:immunization,Vadodara,2026-07..08,0.98,,,pearson_r_levels,0.98,High,"Institutional Delivery and Immunization move together (r = +0.98, n = 12), led by Vadodara.",False
+INS-0010,correlation,anc_coverage:high_risk_cases,Mehsana,2026-07..08,-0.93,,,pearson_r_levels,0.93,High,"ANC Coverage and High Risk Cases move in opposite directions (r = -0.93, n = 12), led by Mehsana.",False
+INS-0011,correlation,anc_coverage:high_risk_cases,Mehsana,2026-07..08,-0.98,,,pearson_r_changes,0.98,Medium,"Monthly shifts in ANC Coverage and High Risk Cases are inverse (r = -0.98, n = 6, small sample), driven by Mehsana.",False
+INS-0012,correlation,institutional_delivery:immunization,Ahmedabad,2026-07..08,0.96,,,pearson_r_changes,0.96,Medium,"Monthly shifts in Institutional Delivery and Immunization are aligned (r = +0.96, n = 6, small sample), driven by Ahmedabad.",False
+INS-0013,outlier,anc_coverage,Ahmedabad,2026-08,69.0,80.5,-14.3,iqr_distance,-1.65,Low,"Ahmedabad's ANC Coverage of 69% sits outside the IQR fence (69.9% to 92.9%), 14% below the median.",True
+INS-0014,threshold_breach,anc_coverage,Bhavnagar,2026-07,77.0,80.0,-3.8,gap_to_target,0.38,Low,"Bhavnagar's ANC Coverage of 77% is below the 80% target, 3.8% short.",True
+INS-0015,threshold_breach,anc_coverage,Bhavnagar,2026-08,79.0,80.0,-1.2,gap_to_target,0.12,Low,"Bhavnagar's ANC Coverage of 79% is below the 80% target, 1.2% short.",True
+INS-0016,threshold_breach,anc_coverage,Rajkot,2026-07,79.0,80.0,-1.2,gap_to_target,0.12,Low,"Rajkot's ANC Coverage of 79% is below the 80% target, 1.2% short.",True
+INS-0017,trend,high_risk_cases,Vadodara,2026-08,6.0,7.0,-14.3,pct_change,1.43,Low,"High Risk Cases in Vadodara dropped by 14.3% vs 2026-07 (7 → 6), past the 10% threshold.",False
+INS-0018,trend,high_risk_cases,Bhavnagar,2026-08,15.0,17.0,-11.8,pct_change,1.18,Low,"High Risk Cases in Bhavnagar dropped by 11.8% vs 2026-07 (17 → 15), past the 10% threshold.",False
+INS-0019,outlier,immunization,Vadodara,2026-08,97.0,91.5,6.0,iqr_distance,1.9,Low,"Vadodara's Immunization of 97% sits outside the IQR fence (86% to 96%), 6% above the median.",False
+INS-0020,correlation,anc_coverage:institutional_delivery,Mehsana,2026-07..08,0.85,,,pearson_r_changes,0.85,Low,"Monthly shifts in ANC Coverage and Institutional Delivery are aligned (r = +0.85, n = 6, small sample), driven by Mehsana.",False
+INS-0021,correlation,anc_coverage:immunization,Mehsana,2026-07..08,0.85,,,pearson_r_changes,0.85,Low,"Monthly shifts in ANC Coverage and Immunization are aligned (r = +0.85, n = 6, small sample), driven by Mehsana.",False
+INS-0022,correlation,immunization:high_risk_cases,Mehsana,2026-07..08,-0.77,,,pearson_r_changes,0.77,Low,"Monthly shifts in Immunization and High Risk Cases are inverse (r = -0.77, n = 6, small sample), driven by Mehsana.",False
+INS-0023,correlation,institutional_delivery:high_risk_cases,Mehsana,2026-07..08,-0.76,,,pearson_r_changes,0.76,Low,"Monthly shifts in Institutional Delivery and High Risk Cases are inverse (r = -0.76, n = 6, small sample), driven by Mehsana.",False
